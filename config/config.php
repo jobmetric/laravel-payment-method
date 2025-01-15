@@ -4,17 +4,16 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Cache Time
+    | Namespace Payment Method drivers
     |--------------------------------------------------------------------------
     |
-    | Cache time for get data payment method
+    | Namespace Extension drivers for Payment Method.
     |
-    | - set zero for remove cache
-    | - set null for forever
-    |
-    | - unit: minutes
     */
 
-    "cache_time" => env("PAYMENT_METHOD_CACHE_TIME", 0),
+    'namespaces' => [
+        'JobMetric\PaymentMethod\Extensions',
+        'App\Extensions\PaymentMethod',
+    ],
 
 ];
