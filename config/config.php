@@ -12,8 +12,9 @@ return [
     */
 
     'namespaces' => [
-        'JobMetric\PaymentMethod\Extensions',
-        'App\Extensions\PaymentMethod',
+        'JobMetric\PaymentMethod\Extensions' => [
+            'deletable' => false,
+        ],
     ],
 
 ];
