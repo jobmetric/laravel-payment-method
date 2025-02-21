@@ -35,6 +35,7 @@ class PaymentMethodServiceProvider extends PackageCoreServiceProvider
             ExtensionType::define('payment-method')
                 ->label('payment-method::base.label')
                 ->description('payment-method::base.description')
+                ->showDescriptionInList()
                 ->driverNamespace($driverNamespace);
         });
     }
