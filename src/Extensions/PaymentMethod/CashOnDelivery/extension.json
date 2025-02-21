@@ -1,0 +1,35 @@
+{
+    "extension": "PaymentMethod",
+    "name": "CashOnDelivery",
+    "version": "1.0.0",
+    "title": "payment-method::base.extensions.cash_on_delivery.title",
+    "description": "payment-method::base.extensions.cash_on_delivery.description",
+    "author": "Job Metric",
+    "email": "jobmetricnet@gmail.com",
+    "website": "jobmetric.net",
+    "creationDate": "2025-01-17 20:50:00",
+    "copyright": "Copyright (c) 2021",
+    "license": "MIT",
+    "fields": [
+        {
+            "name": "width",
+            "type": "number",
+            "required": true,
+            "default": 100,
+            "label": "Width",
+            "info": "The width of the banner",
+            "placeholder": "Enter the width of the banner",
+            "validation": "numeric|min:1|max:1000"
+        },
+        {
+            "name": "height",
+            "type": "number",
+            "required": true,
+            "default": 100,
+            "label": "Height",
+            "info": "The height of the banner",
+            "placeholder": "Enter the height of the banner",
+            "validation": "numeric|min:1|max:1000"
+        }
+    ]
+}
